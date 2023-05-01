@@ -1,0 +1,109 @@
+.list-group {
+    width: 1200px;
+}
+
+.environments {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.list-env {
+    padding: 25px !important;
+}
+
+.button-add {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+#modal,
+#modal-edit {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-color: white;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+
+.modal-header-i {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-footer-i {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal-edit.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#fade,
+#modal,
+#modal-edit {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 10000;
+}
+
+#modal.hide,
+#modal-edit.hide {
+    top: 0;
+}
+
+.list-environments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.environment {
+    width: 1200px;
+}
+
+.edit {
+    cursor: pointer;
+    margin: 0 8px 0 8px;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.validations {
+    color: red;
+  }

@@ -1,0 +1,34 @@
+header {
+  background-color: #6ed1f0;
+  width: 100%;
+  height: 120px;
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+h1 {
+  font-size: 55px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder !important;
+  padding-top: 40px;
+  padding-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.logout-icon {
+  cursor: pointer;
+  width: 70px;
+  height: 80px;
+  padding-top: 40px;
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
